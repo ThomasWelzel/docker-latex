@@ -2,8 +2,8 @@
 
 set +e
 cd /tmp
-cp -R projekt projekt2
-cd projekt2
+cp -R projekt tmpprojekt
+cd tmpprojekt
 latexmk -cd -e '$$pdflatex="pdflatex -interaction=nonstopmode %S %O"' -f -pdf main.tex
 echo "Compiling done!"
 
