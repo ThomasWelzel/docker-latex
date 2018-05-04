@@ -14,8 +14,9 @@ textlive installation:
 
 git clone https://github.com/ThomasWelzel/latex-bitbucket.git
 
+```
 docker run -v $pathtolatexprojekt$:/tmp/projekt -v $pathto$/latex-bitbucket/:/tmp/scripts -i thowel/latex /tmp/scripts/compile.sh
-
+```
 
 ## setup bitbucket pipeline
 Automatisches bauen eines Latexprojektes und pushen der generierten Dateien in ein Github Projekt.
